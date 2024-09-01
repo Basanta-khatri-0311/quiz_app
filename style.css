@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn{
+    width: 450px;
+    height: 115px;
+    font-size: 53px;
+    font-weight: 600;
+    font-family: "poppins";
+    color: #FFFFFF;
+    background-color: #35BD3A;
+    border: 1px solid #35BD3A;
+    border-radius: 9px;
+    box-shadow: 0 3px 5px;
+    
+}
