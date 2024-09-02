@@ -56,14 +56,30 @@ body {
 }
 
 .quiz-container{
+  position: absolute;
+  top: 40px;
   display: none;
+  flex-direction: column;
+  width: 100%;
 }
 
 .quiz-container .icon{
   max-width: 220px;
 }
+
+.icon{
+  display: flex;
+  justify-content: flex-start;
+}
+
 .icon img{
   width: 100%;
+}
+
+.sound-toggle{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
 
 @media (max-width: 600px) {

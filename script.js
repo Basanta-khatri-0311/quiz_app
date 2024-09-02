@@ -4,7 +4,7 @@ const startContainer = document.querySelector('.start-container')
 
 startButton.addEventListener('click',()=>{
     startContainer.style.display = 'none'
-    quizContainer.style.display = 'block'
+    quizContainer.style.display = 'flex'
 })
 
 const questions = [
