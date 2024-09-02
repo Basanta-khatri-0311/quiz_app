@@ -3,6 +3,7 @@ const startContainer = document.querySelector('.start-container')
 const quizContainer = document.querySelector('.quiz-container')
 const soundToggle = document.querySelector('.sound-toggle');
 const body = document.querySelector('body')
+const questionIndexing = document.querySelector('.question-index')
 
 soundToggle.addEventListener('click', function() {
   const icon = this.querySelector('i');
@@ -149,4 +150,8 @@ const questions = [
       correctAnswer: "font-family"
     }
   ];
+
+const questionList = questions.map((q)=>q.question)
+
+
   
