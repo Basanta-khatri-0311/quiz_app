@@ -74,12 +74,18 @@ body {
 
 .icon img{
   width: 100%;
+  margin-left: 11em;
 }
 
 .sound-toggle{
   display: flex;
   justify-content: flex-end;
-  margin-right: 40px;
+  margin-right: 12em;
+}
+
+.sound-toggle i{
+  font-size: 40px;
+
 }
 
 @media (max-width: 600px) {
@@ -101,6 +107,13 @@ body {
   }
   .score {
     margin-top: 170px;
+  }
+  .icon img{
+    margin-left: 3em;
+  }
+  
+  .sound-toggle{
+    margin-right: 3em;
   }
 }
 

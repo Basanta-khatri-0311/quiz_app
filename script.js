@@ -1,10 +1,25 @@
 const startButton = document.querySelector('.start-btn')
 const startContainer = document.querySelector('.start-container')
- const quizContainer = document.querySelector('.quiz-container')
+const quizContainer = document.querySelector('.quiz-container')
+const soundToggle = document.querySelector('.sound-toggle');
+const body = document.querySelector('body')
+
+soundToggle.addEventListener('click', function() {
+  const icon = this.querySelector('i');
+
+  if (icon.classList.contains('ri-volume-up-line')) {
+    icon.classList.remove('ri-volume-up-line');
+    icon.classList.add('ri-volume-mute-fill');
+  } else {
+    icon.classList.remove('ri-volume-mute-fill');
+    icon.classList.add('ri-volume-up-line');
+  }
+});
 
 startButton.addEventListener('click',()=>{
     startContainer.style.display = 'none'
     quizContainer.style.display = 'flex'
+    body.style.backgroundColor = '#CCE2C2'
 })
 
 const questions = [
