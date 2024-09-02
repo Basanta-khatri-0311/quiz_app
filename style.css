@@ -13,21 +13,25 @@ body {
 
 .start-container{
     text-align: center;
+    width: 100%;
 }
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
+.hero img {
+  max-width: 70%; /* Ensure the image scales down on smaller screens */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Ensure the image is treated as a block element */
+  margin: 0 auto;  /* Center the image horizontally */
+}
+
+
 .start-btn {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  margin-top: 150px;
+  margin-top: 40px;
   width: 80%;
   max-width: 450px;
   padding: 20px;
@@ -43,10 +47,33 @@ body {
 }
 
 .score {
-  display: none;
-  margin-top: 300px;
+  /* display: none; */
+  margin-top: 80px;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   font-family: "poppins";
 }
+
+@media (max-width: 600px) {
+  .hero img {
+    max-width: 90%; 
+  }
+  .start-btn {
+    margin-top: 70px; 
+    width: 65%;
+    font-size: 1.2em; 
+  }
+
+  .hero {
+    margin-top: 10px; 
+  }
+
+  .start-container {
+    padding: 10px; 
+  }
+  .score {
+    margin-top: 170px;
+  }
+}
+
