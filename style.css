@@ -55,6 +55,17 @@ body {
   font-family: "poppins";
 }
 
+.quiz-container{
+  display: none;
+}
+
+.quiz-container .icon{
+  max-width: 220px;
+}
+.icon img{
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .hero img {
     max-width: 90%; 
