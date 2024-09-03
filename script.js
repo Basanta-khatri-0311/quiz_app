@@ -4,6 +4,11 @@ const quizContainer = document.querySelector('.quiz-container')
 const soundToggle = document.querySelector('.sound-toggle');
 const body = document.querySelector('body')
 const questionIndexing = document.querySelector('.question-index')
+const option = document.querySelector('.option')
+const totalQuestions = document.querySelectorAll('#total-questions')
+const timerDisplay = document.querySelector('.time-index');
+
+
 
 soundToggle.addEventListener('click', function() {
   const icon = this.querySelector('i');
@@ -153,5 +158,5 @@ const questions = [
 
 const questionList = questions.map((q)=>q.question)
 
-
+totalQuestions.innerText = questions.length
   

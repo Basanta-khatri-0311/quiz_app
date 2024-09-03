@@ -34,7 +34,7 @@ body {
 .start-btn {
   margin-top: 40px;
   width: 80%;
-  max-width: 450px;
+  max-width: 350px;
   padding: 20px;
   font-size: 2em;
   font-weight: 600;
@@ -88,14 +88,16 @@ body {
 
 }
 
-/* .question-index{
-
-} */
+.question-index{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12em;
+}
 .question{
   border-radius: 12px;
   font-size: 24px;
   padding-inline: 150px;
-  padding-block: 40px;
+  padding-block: 25px;
   display: flex;
   justify-content: center;
   width: 80%;
@@ -105,7 +107,7 @@ body {
 
 .options{
   border-radius: 12px;
-  margin-top: 70px;
+  margin-top: 40px;
   background-color: #F5F5F57A;
   font-size: 24px;
   width: 80%;
@@ -119,9 +121,10 @@ body {
 .option{
   border: 3px solid #F5F5F57A;
   border-radius: 8px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin-top: 30px;
   background-color: #F5F5F57A;
+  cursor: pointer;
 }
 
 .options li{
@@ -139,7 +142,15 @@ body {
   margin-right: 200px;
 }
 
-
+.time-index{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  display: inline-block;
+  font-size: 36px;
+  padding: 5px;
+  background-color: #C5B1006E;
+}
 
 @media (max-width: 600px) {
   .hero img {
@@ -170,14 +181,14 @@ body {
   }
   .question{
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 20px;
     padding-inline: 20px;
     padding-block: 10px;
     margin-inline: 20px;
   }
   .options{
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 20px;
     margin-inline: 20px;
   }
   .next-btn{
