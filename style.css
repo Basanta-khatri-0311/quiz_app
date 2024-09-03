@@ -145,11 +145,12 @@ body {
 .time-index{
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  display: inline-block;
+  width: 10%;
   font-size: 36px;
-  padding: 5px;
   background-color: #C5B1006E;
+}
+.time{
+  padding: 5px;
 }
 
 @media (max-width: 600px) {
